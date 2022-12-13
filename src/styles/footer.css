@@ -1,0 +1,137 @@
+/*Refiere a la parte de abajo de la pag "datos de la pag"*/
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #ff4500;
+  }
+  /*trefiere al tamaño de la imagen de la pag*/
+  .footer__logo img {
+    width: calc(70% - 35%);
+    margin-bottom: 10px;
+  }
+  /*refiere al nombre de la pag, parte de abajo*/
+  .footer__logo h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  /*refiere al texto debajo del nombre de la pag */
+  .footer__logo p {
+    font-size: 1.2rem;
+    color: #790604;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .delivery__time-item {
+    background: transparent !important;
+  }
+  /*refiere al telefono y correo*/
+  .delivery__time-item span {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #790604;
+  }
+  
+  .delivery__time-item p {
+    color: #a52a2a;
+  }
+  /*refiere a los titulos de toda la seccion*/
+  .footer__title {
+    font-size: 1.2rem;
+    color: #800000;
+    font-weight: 400;
+  }
+  /*refiere a la caja de introducir correo*/
+  .newsletter {
+    padding: 10px;
+    border: 1px solid #800000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .newsletter input {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .newsletter input:focus {
+    outline: none;
+  }
+  /*refiere al boton para enviar correo*/
+  .newsletter span {
+    background: #dc0000;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .newsletter span i {
+    color: #722f37;
+  }
+  
+  .newsletter input::placeholder {
+    color: #000;
+  }
+  /*refiere a los iconos de redes*/
+  .social__links span i {
+    padding: 12px;
+    background: #dc0000;
+    color: #fff;
+    border-radius: 15%;
+  }
+  
+  
+  /*refiere al texto del correo ingresado*/
+  @media only screen and (max-width: 992px) {
+    .newsletter input {
+      padding: 7px;
+      font-size: 1rem;
+    }
+    /*refiere al boton enviar */
+    .newsletter span {
+      padding: 5px 10px;
+      font-size: 1rem;
+    }
+  }
+  /*refiere a texto Trabajamos todos los días*/
+  @media only screen and (max-width: 768px) {
+    .footer__title {
+      font-size: 1rem;
+    }
+  
+  /*refiere al texto de los horarios*/  
+  .delivery__time-item span {
+      font-size: 1rem;
+    }
+  /*refiere a las horas de atencion*/
+    .delivery__time-item p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+  }
+  /*efiere al tamaño del copy right*/
+  .copyright__text {
+    font-size: 1rem;
+    color: #000;
+  }
+  @media only screen and (max-width: 576px) {
+    .copyright__text {
+      text-align: center;
+    }
+  
+    .social__links p {
+      font-size: 1rem;
+    }
+  
+    .social__links span {
+      padding: 4px;
+    }
+    .social__links span a {
+      font-size: 0.8rem;
+    }
+  }
+  
