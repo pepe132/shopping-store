@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Skeleton from 'react-loading-skeleton'
+import { NavLink } from 'react-router-dom'
 
 export const Commerces = () => {
 
@@ -11,7 +12,6 @@ export const Commerces = () => {
     fetch(`http://localhost:8080/api/commerce`)
     .then((response) => response.json())
     .then((actualData) =>{
-      console.log(actualData);
       setData(actualData.commerce)
       setLoading(false)
     })
@@ -51,7 +51,7 @@ export const Commerces = () => {
                   <div className="card-body">
                     <h5 className="card-title mb-0">{product.nombre_comercio}</h5>
                     <p className="card-text lead fw-bold">Giro de negocio: {product.giro_negocio}</p>
-                    
+                    <NavLink to={`/comercios/${product._id}`} className="btn btn-outline-dark">Ir a vista del negocio</NavLink>
                   </div>
                 </div>
 

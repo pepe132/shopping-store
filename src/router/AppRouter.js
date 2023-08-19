@@ -6,6 +6,7 @@ import { Register } from '../components/auth/Register'
 import Cart from '../components/Cart'
 import { Checkout } from '../components/Checkout'
 import { Commerces } from '../components/commerce/Commerces'
+import { CommercesById } from '../components/commerce/CommercesById'
 import Footer from '../components/Footer'
 import { Home } from '../components/Home'
 import NavBar from '../components/NavBar'
@@ -42,11 +43,13 @@ export const AppRouter = () => {
             <Route path='/productos' element={<Products/>}/>
             <Route path='/productos/:id' element={<Product/>}/>
             <Route path='/comercios' element={<Commerces/>}/>
+            <Route path='/comercios/:id' element={<CommercesById/>}/>
             <Route path='/cart' element={<Cart/>}/>
             <Route path='/checkout' element={<Checkout/>}/>
 
             <Route element={<PrivateRoute/>}>
                 <Route path='/usuario' element={<UserScreen/>}/>
+                
 
             </Route>
 
