@@ -16,7 +16,7 @@ export const Product = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:8080/api/products/${id}`)
+        fetch(`https://todo-cerca-backend-production.up.railway.app/api/products/${id}`)
         .then((response) => response.json())
         .then((actualData) =>{
             console.log(actualData);
@@ -56,7 +56,7 @@ export const Product = () => {
        return(
         <>
             <div className="col-md-6">
-                <img src='https://www.paulinacocina.net/wp-content/uploads/2020/01/untitled-copy.jpg' alt='hola' height={450} width={450}/>
+                <img src='https://i5.walmartimages.com.mx/mg/gm/3pp/asr/cd447a2c-acf0-401e-8b02-e10b051f7b67.a51ae248866d7e6dae69064d894b2fdb.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF' alt='hola' height={450} width={450}/>
             </div>
             <div className="col-md-6">
                 <h3 className="lead text-black-50">Producto elaborado por: {product.comercio.nombre_comercio}</h3>

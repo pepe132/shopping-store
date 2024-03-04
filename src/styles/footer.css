@@ -2,7 +2,7 @@
 .footer {
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #ff4500;
+    background: #00041F;
   }
   /*trefiere al tamaño de la imagen de la pag*/
   .footer__logo img {
@@ -19,7 +19,7 @@
   /*refiere al texto debajo del nombre de la pag */
   .footer__logo p {
     font-size: 1.2rem;
-    color: #790604;
+    color: white;
     line-height: 20px;
     text-align: center;
   }
@@ -31,22 +31,22 @@
   .delivery__time-item span {
     font-weight: 600;
     font-size: 1rem;
-    color: #790604;
+    color: white;
   }
   
   .delivery__time-item p {
-    color: #a52a2a;
+    color: white;
   }
   /*refiere a los titulos de toda la seccion*/
   .footer__title {
     font-size: 1.2rem;
-    color: #800000;
+    color: white;
     font-weight: 400;
   }
   /*refiere a la caja de introducir correo*/
   .newsletter {
     padding: 10px;
-    border: 1px solid #800000;
+    border: 1px solid white;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
@@ -64,13 +64,13 @@
   }
   /*refiere al boton para enviar correo*/
   .newsletter span {
-    background: #dc0000;
+    background: #00041F;
     padding: 5px 10px;
     border-radius: 10px;
   }
   
   .newsletter span i {
-    color: #722f37;
+    color: white;
   }
   
   .newsletter input::placeholder {
@@ -79,7 +79,7 @@
   /*refiere a los iconos de redes*/
   .social__links span i {
     padding: 12px;
-    background: #dc0000;
+    background: #00041F;
     color: #fff;
     border-radius: 15%;
   }
@@ -116,7 +116,7 @@
   /*efiere al tamaño del copy right*/
   .copyright__text {
     font-size: 1rem;
-    color: #000;
+    color: white;
   }
   @media only screen and (max-width: 576px) {
     .copyright__text {

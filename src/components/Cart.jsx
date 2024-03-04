@@ -19,8 +19,8 @@ const Cart = () => {
     return (
       <div className="px-4 my-5 bg-light rounded-3 py-5">
         <div className="container py-4">
-          <div className="row">
-            <h3>Tu carrito está vacio</h3>
+          <div className="row text-center">
+            <h3>Tu carrito está vacio </h3>
             <NavLink to='/' className='btn btn-dark ms-2 px-3 py-2'>
                 Agrega productos a tu carrito
             </NavLink>
@@ -37,7 +37,7 @@ const Cart = () => {
             <div className="row justify-content-center">
               <div className="col-md-4">
                 <img
-                  src='https://www.paulinacocina.net/wp-content/uploads/2020/01/untitled-copy.jpg'
+                  src='https://i5.walmartimages.com.mx/mg/gm/3pp/asr/cd447a2c-acf0-401e-8b02-e10b051f7b67.a51ae248866d7e6dae69064d894b2fdb.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF'
                   alt="uoewbife"
                   height="200px"
                   width="180px"
@@ -77,7 +77,7 @@ const Cart = () => {
               to="/checkout"
               className="btn btn-outline-dark mb-5 w-25 mx-auto"
             >
-              Proceed to Checkout
+              Proceder al pago
             </NavLink>
           </div>
         </div>

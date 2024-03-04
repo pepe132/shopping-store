@@ -14,7 +14,7 @@ export const CommercesById = () => {
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        fetch(`http://localhost:8080/api/commerce/${id}`)
+        fetch(`https://todo-cerca-backend-production.up.railway.app/api/commerce/${id}`)
         .then((response) => response.json())
         .then((actualData) =>{
           console.log(actualData);

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import logo from "../assets/res-logo.png";
+import logo from "../assets/gaming.jpg";
 
 import "../styles/footer.css";
 
@@ -14,7 +14,7 @@ const Footer = () => {
           <Col lg="3" md="4" sm="6">
             <div className=" footer__logo text-start">
               <img src={logo} alt="logo" />
-              <h5>Todo cerca de ti</h5>
+              <h5 style={{color:"white"}}>Gaming</h5>
               <p>
                 Estamos enfocados ha hacer mas facil
                 todo lo que necesitas para una vida mas
@@ -55,12 +55,12 @@ const Footer = () => {
           </Col>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="footer__title">Novedades</h5>
-            <p>Suscribete y  te enviaremos las novedades</p>
+            <h5 className="footer__title" style={{color:"white"}}>Novedades</h5>
+            <p style={{color:"white"}}>Suscribete y  te enviaremos las novedades</p>
             <div className="newsletter">
-              <input type="email" placeholder="Ingresa tu correo" />
+              <input type="email" placeholder="Ingresa tu correo" color="white"/>
               <span>
-                <i class="ri-send-plane-line"></i>
+                <i class="ri-send-plane-line" color="white"></i>
               </span>
             </div>
           </Col>

@@ -1,3 +1,4 @@
+//actions for manipulating cart
 export const addCart=(product)=>{
     return {
         type:'ADDCART',
@@ -12,13 +13,7 @@ export const deleteCart=(product)=>{
     }
 }
 
-export const login=(user)=>{
-    return{
-        type:'AUTHLOGIN',
-        payload:user
-    }
-}
-
+//Actions for login 
 export const authCheckingFinish=()=>{
     return{
         type:'AUTHFINISH'
@@ -28,5 +23,22 @@ export const authCheckingFinish=()=>{
 export const authLogout=()=>{
     return{
         type:'AUTHLOGOUT'
+    }
+}
+
+export const login=(user)=>{
+    return{
+        type:'AUTHLOGIN',
+        payload:user
+    }
+}
+
+//Actions for manipulating products
+
+export const products=(products)=>{
+    return{
+        type:'GETPRODUCTS',
+        payload:products
+
     }
 }
